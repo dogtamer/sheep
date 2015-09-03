@@ -368,11 +368,14 @@ Style/SingleLineMethods:
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-string-literals
-  Enabled: true
+  Enabled: false
   EnforcedStyle: double_quotes
   SupportedStyles:
   - single_quotes
   - double_quotes
+  Exclude:
+  - app/models/goat.rb
+  - app/models/cat.rb
 Style/StringLiteralsInInterpolation:
   Description: Checks if uses of quotes inside expressions in interpolated strings
     match the configured preference.
@@ -609,7 +612,9 @@ Style/SymbolArray:
   Enabled: false
 Style/ExtraSpacing:
   Description: Do not use unnecessary spacing.
-  Enabled: true
+  Enabled: false
+  Exclude:
+  - app/models/goat.rb
 Style/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
   Enabled: false
