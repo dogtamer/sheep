@@ -1,5 +1,5 @@
 class Dog < ActiveRecord::Base
   def shout
-    'wanwanwan'
+    'checkme'
   end
 end
