@@ -1,5 +1,5 @@
 class Goat < ActiveRecord::Base
   def shout
-    'mehmeh'
+    'mehmehmeh'
   end
 end
