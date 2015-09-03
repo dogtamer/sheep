@@ -4,7 +4,7 @@ class DogsController < ApplicationController
   # GET /dogs
   # GET /dogs.json
   def index
-    @dogs = Dog.all
+    @dogs =   Dog.all
   end
 
   # GET /dogs/1
@@ -14,6 +14,7 @@ class DogsController < ApplicationController
 
   # GET /dogs/new
   def new
+    hi = "hi!"
     @dog = Dog.new
   end
 
@@ -28,7 +29,7 @@ class DogsController < ApplicationController
 
     respond_to do |format|
       if @dog.save
-        format.html { redirect_to @dog, notice: 'Dog was successfully created.' }
+        format.html { redirect_to @dog, notice: "Dog was successfully created." }
         format.json { render :show, status: :created, location: @dog }
       else
         format.html { render :new }
