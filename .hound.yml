@@ -375,7 +375,6 @@ Style/StringLiterals:
   - double_quotes
   Exclude:
   - app/models/goat.rb
-  - app/models/cat.rb
 Style/StringLiteralsInInterpolation:
   Description: Checks if uses of quotes inside expressions in interpolated strings
     match the configured preference.
@@ -612,7 +611,7 @@ Style/SymbolArray:
   Enabled: false
 Style/ExtraSpacing:
   Description: Do not use unnecessary spacing.
-  Enabled: false
+  Enabled: true
   Exclude:
   - app/models/goat.rb
 Style/AccessorMethodName:
